@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+BUILD="$(pwd)"
+newline="
+"
+
+if test -f "$BUILD"/davs2_options ; then
+    IFS=$newline
+    set -- $(cat "$BUILD"/davs2_options) "$@"
+    unset -v IFS
+fi
+
+OPTIONS="--disable-cli --bit-depth=10"
+
+cd "$BUILD"/davs2/build/linux
+./configure --prefix="$BUILD/build_libs" --libdir="$BUILD/build_libs/lib" $OPTIONS "$@"
