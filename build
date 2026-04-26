@@ -4,6 +4,8 @@ export LC_ALL=C
 
 #scripts/fribidi-config
 #scripts/fribidi-build "$@"
+scripts/davs2-config
+scripts/davs2-build "$@"
 scripts/libplacebo-config
 scripts/libplacebo-build "$@"
 scripts/libass-config

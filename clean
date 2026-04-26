@@ -2,6 +2,7 @@
 export LC_ALL=C
 
 scripts/ffmpeg-clean
+scripts/davs2-clean
 scripts/fribidi-clean
 scripts/libass-clean
 scripts/libplacebo-clean
