@@ -21,6 +21,7 @@ jobs:
           automake \
           libtool \
           pkg-config \
+          libdav1d-dev \
           libfreetype6-dev \
           libfribidi-dev \
           libfontconfig1-dev \
