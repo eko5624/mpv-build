@@ -10,7 +10,7 @@ if test -f "$BUILD"/davs2_options ; then
     unset -v IFS
 fi
 
-OPTIONS="--disable-cli --bit-depth=10"
+OPTIONS="--disable-cli --bit-depth=10 --enable-pic"
 
 cd "$BUILD"/davs2/build/linux
-./configure --prefix="$BUILD/build_libs" --libdir="$BUILD/build_libs/lib" --disable-cli --bit-depth=10 --enable-pic "$@"
+./configure --prefix="$BUILD/build_libs" --libdir="$BUILD/build_libs/lib" $OPTIONS "$@"
